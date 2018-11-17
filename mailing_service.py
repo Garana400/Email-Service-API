@@ -11,9 +11,9 @@ from email import utils
 
 app = Flask(__name__)
 
-SG_API_KEY = "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"
-MG_API_KEY = "857355bab4ffb9daa5f3c30de7b85ad1-9525e19d-7878c755"
-MG_DOMAIN = "sandboxfc25a0b0e83942138566acc0c5eb7c8c.mailgun.org"
+SG_API_KEY = "YOUR API KEY"
+MG_API_KEY = "YOUR API KEY"
+MG_DOMAIN = "YOUR MAILGUN DOMAIN"
 
 
 def use_sendgrid(sender, recipient, _subject, _content, send_after):
