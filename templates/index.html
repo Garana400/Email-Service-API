@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Service Application</title>
+  </head>
+  <body>
+  	<form action="{{ url_for('send_email') }}" method="POST"  style="text-align:center; margin-top:100px">
+  		{% with messages = get_flashed_messages() %}
+      	{% if messages %}  
+        {% for message in messages %}
+            <p> {{ message }} </p>
+        {% endfor %}
+        {% endif %}
+    	{% endwith %}
+
+        <label>From: </label>
+        <input name="sender" type="Email" placeholder="Enter Sender Email" required>
+
+        <br><br>
+
+        <label>To: </label>
+        <input name="recipient" type="Email" placeholder="Enter Recipient Email" required>
+            
+        <br><br>
+        
+        <label>Subject: </label>
+        <input name="subject" type="text" placeholder="Email's Subject" required>
+   
+        <br><br>
+
+        <label>Message Body: </label><br>
+        <input name="content" type="text" placeholder="Enter Message Body" style="width: 400px; height: 100px">
+
+        <br><br>
+
+        <label>To be sent in: </label>
+        <input name="hrs" type="number" >
+        <label> Hours, </label>
+        <input name="mnts" type="number" >
+        <label> Minutes.</label>
+
+        <br><br>
+
+        <button type="Submit">Send Email</button>
+
+    </form>
+  </body>
+</html>
