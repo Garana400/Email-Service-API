@@ -16,6 +16,9 @@ MG_API_KEY = "YOUR API KEY"
 MG_DOMAIN = "YOUR MAILGUN DOMAIN"
 
 
+#lolaaaa medd"
+
+
 def use_sendgrid(sender, recipient, _subject, _content, send_after):
     # if content is left blank set it to a white space.
     if not _content:
