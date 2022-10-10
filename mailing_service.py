@@ -8,7 +8,8 @@ from time import time
 from flask import Flask, render_template, request, redirect, url_for, flash
 from email import utils
 
-
+#uncommited update
+#help please
 app = Flask(__name__)
 
 SG_API_KEY = "YOUR API KEY"
@@ -16,7 +17,11 @@ MG_API_KEY = "YOUR API KEY"
 MG_DOMAIN = "YOUR MAILGUN DOMAIN"
 
 
+
 #lolaaaa medd"
+#lolaaaa from dev
+#after amend"
+
 
 
 def use_sendgrid(sender, recipient, _subject, _content, send_after):
